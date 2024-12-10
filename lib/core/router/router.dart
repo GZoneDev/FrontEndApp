@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-//import 'package:receptico/features/auth/auth.dart';
+import 'package:receptico/features/auth/auth.dart';
 
 part 'router.gr.dart';
 
@@ -7,9 +7,9 @@ part 'router.gr.dart';
 class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
-        // AutoRoute(page: StartRoute.page, path: '/'),
-        // AutoRoute(page: LoginRoute.page),
-        // AutoRoute(page: RegisterRoute.page),
+        AutoRoute(page: StartRoute.page, path: '/'),
+        AutoRoute(page: LoginRoute.page),
+        AutoRoute(page: RegisterRoute.page),
       ];
 
   @override

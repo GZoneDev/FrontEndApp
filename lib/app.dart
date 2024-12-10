@@ -7,7 +7,7 @@ import 'package:receptico/generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:talker_flutter/talker_flutter.dart';
 
-//import 'features/auth/block/block.dart';
+import 'features/auth/block/block.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -23,7 +23,7 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        //BlocProvider<AuthBloc>(create: (_) => AuthBloc()),
+        BlocProvider<AuthBloc>(create: (_) => AuthBloc()),
         // Add BLoC .....
       ],
       child: MaterialApp.router(
