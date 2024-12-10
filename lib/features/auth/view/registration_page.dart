@@ -28,7 +28,7 @@ class _RegisterPageState extends State<RegisterPage> {
     _isError = false;
   }
 
-  void _clearFailureMessage() {
+  void _clearFailMessage() {
     if (_isError) {
       _isError = false;
       context.read<AuthBloc>().add(AuthFailClear());
@@ -86,7 +86,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       TextInputWidget(
                         placeholder: 'Ім’я',
                         controller: _usernameController,
-                        onTap: _clearFailureMessage,
+                        onTap: _clearFailMessage,
                       ),
                       BlocBuilder<AuthBloc, AuthState>(
                           builder: (context, state) {
@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       TextInputWidget(
                         placeholder: 'Email',
                         controller: _emailController,
-                        onTap: _clearFailureMessage,
+                        onTap: _clearFailMessage,
                       ),
                       BlocBuilder<AuthBloc, AuthState>(
                           builder: (context, state) {
@@ -116,7 +116,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       TextInputWidget(
                         placeholder: 'Номер телефону',
                         controller: _phoneController,
-                        onTap: _clearFailureMessage,
+                        onTap: _clearFailMessage,
                       ),
                       BlocBuilder<AuthBloc, AuthState>(
                           builder: (context, state) {
@@ -131,7 +131,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       PasswordInputWidget(
                         placeholder: 'Пароль',
                         controller: _passwordController,
-                        onTap: _clearFailureMessage,
+                        onTap: _clearFailMessage,
                       ),
                       SizedBox(height: 28),
                       LinkButtonWidget(
@@ -142,7 +142,10 @@ class _RegisterPageState extends State<RegisterPage> {
                       FooterWidget(
                         text: 'Вже маєте акаунт?',
                         linkText: 'Увійти',
-                        onTab: () => AutoRouter.of(context).push(LoginRoute()),
+                        onTab: () {
+                          _clearFailMessage();
+                          AutoRouter.of(context).push(LoginRoute());
+                        },
                       ),
                     ],
                   ),

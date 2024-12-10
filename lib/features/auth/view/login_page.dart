@@ -119,7 +119,10 @@ class _LoginPageState extends State<LoginPage> {
                     FooterWidget(
                       text: 'Не маєте акаунту?',
                       linkText: 'Створити зараз',
-                      onTab: () => AutoRouter.of(context).push(RegisterRoute()),
+                      onTab: () {
+                        _clearFailMessage();
+                        AutoRouter.of(context).push(LoginRoute());
+                      },
                     ),
                     const SizedBox(height: 40),
                     Row(
