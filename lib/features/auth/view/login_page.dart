@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                       linkText: 'Створити зараз',
                       onTab: () {
                         _clearFailMessage();
-                        AutoRouter.of(context).push(LoginRoute());
+                        AutoRouter.of(context).push(RegisterRoute());
                       },
                     ),
                     const SizedBox(height: 40),
