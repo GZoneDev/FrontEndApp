@@ -2,21 +2,28 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PasswordInputWidget extends StatefulWidget {
-  final double width, height;
-  final EdgeInsets margin, padding;
-  final String placeholder;
+  final double width, height, borderRadius, fontSize;
+  final EdgeInsets margin;
+  final String placeholderText;
+  final Color placeholderColor, inputTextColor, backgroundColor;
   final VoidCallback? onTap;
   final TextEditingController? controller;
+  final FormFieldValidator<String>? validator;
 
   const PasswordInputWidget({
     super.key,
-    required this.placeholder,
+    required this.placeholderText,
     this.width = 278,
     this.height = 42,
+    this.borderRadius = 8,
+    this.fontSize = 17,
     this.margin = const EdgeInsets.all(0),
-    this.padding = const EdgeInsets.only(bottom: 3, left: 16, right: 44),
+    this.placeholderColor = const Color(0xFF8E8E93),
+    this.inputTextColor = Colors.black,
+    this.backgroundColor = Colors.white,
     this.onTap,
     this.controller,
+    this.validator,
   });
 
   @override
@@ -24,32 +31,43 @@ class PasswordInputWidget extends StatefulWidget {
 }
 
 class _PasswordInputWidgetState extends State<PasswordInputWidget> {
-  bool _isObscured = false;
+  bool _isObscured = true;
 
   @override
   Widget build(BuildContext context) {
+    const padding = EdgeInsets.only(bottom: 3, left: 16, right: 44);
+    const marginBackground = EdgeInsets.only(top: 3);
     return Container(
-      width: widget.width,
-      height: widget.height,
       margin: widget.margin,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(8.0),
-      ),
       child: Stack(
         children: [
           Container(
-            padding: widget.padding,
+            margin: marginBackground,
+            width: widget.width,
+            height: widget.height,
+            decoration: BoxDecoration(
+              color: widget.backgroundColor,
+              borderRadius: BorderRadius.circular(widget.borderRadius),
+            ),
+          ),
+          Container(
+            padding: padding,
             child: TextFormField(
               controller: widget.controller,
+              validator: widget.validator,
               onTap: widget.onTap,
               obscureText: _isObscured,
+              style: TextStyle(
+                color: widget.inputTextColor,
+                fontSize: widget.fontSize,
+                fontWeight: FontWeight.normal,
+              ),
               decoration: InputDecoration(
-                hintText: widget.placeholder,
+                hintText: widget.placeholderText,
                 hintStyle: TextStyle(
-                  color: Color(0xFF8E8E93),
-                  fontSize: 17,
-                  fontWeight: FontWeight.w400,
+                  color: widget.placeholderColor,
+                  fontSize: widget.fontSize,
+                  fontWeight: FontWeight.normal,
                 ),
                 border: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -63,8 +81,8 @@ class _PasswordInputWidgetState extends State<PasswordInputWidget> {
               onPressed: () => setState(() => _isObscured = !_isObscured),
               icon: Icon(
                 _isObscured ? CupertinoIcons.eye_slash : CupertinoIcons.eye,
-                size: 17,
-                color: Colors.black,
+                size: widget.fontSize,
+                color: widget.inputTextColor,
               ),
             ),
           )

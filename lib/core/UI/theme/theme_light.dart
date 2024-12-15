@@ -8,7 +8,7 @@ final lightTheme = ThemeData(
     bodyMedium: TextStyle(
       fontFamily: 'SFProText',
       fontSize: 15,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.normal,
       color: Colors.white,
     ),
   ),
@@ -21,3 +21,20 @@ final lightTheme = ThemeData(
     ),
   ),
 );
+
+class Theme {
+  final Color fontColor, backgroundColor;
+  const Theme({
+    this.fontColor = Colors.transparent,
+    this.backgroundColor = Colors.transparent,
+  });
+}
+
+const actionButtomTheme = Theme(
+  fontColor: Colors.white,
+  backgroundColor: Color(0xFF32ADE6),
+);
+
+const linkButtomTheme = Theme(backgroundColor: Colors.white);
+const errorTheme = Theme(fontColor: Colors.red);
+const warningTheme = Theme(fontColor: Colors.red);

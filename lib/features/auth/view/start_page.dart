@@ -62,12 +62,12 @@ class StartPage extends StatelessWidget {
                       AutoRouter.of(context).push(LoginRoute());
                     },
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   InkWell(
                     onTap: () {
                       AutoRouter.of(context).push(RegisterRoute());
                     },
-                    child: Text(
+                    child: const Text(
                       'Зареєструватися',
                       style: TextStyle(
                         color: Colors.white,

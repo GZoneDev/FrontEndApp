@@ -50,6 +50,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   @override
   Widget build(BuildContext context) {
+    const marginTextInput = 10.0;
     return BlocListener<AuthBloc, AuthState>(
       listener: (context, state) {
         if (state is AuthRegisterSuccess) {
@@ -64,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
               alignment: Alignment.center,
               child: SizedBox(
                 width: 278,
-                height: 460,
+                height: 480,
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
@@ -72,7 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         title: 'Реєстрація',
                         subtitle: 'Створіть новий акаунт',
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 13),
                       BlocBuilder<AuthBloc, AuthState>(
                           builder: (context, state) {
                         if (state is AuthRegisterFailure &&
@@ -81,7 +82,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           return ErrorMessageWidget(
                               errorMessage: state.usernameError!);
                         }
-                        return SizedBox(height: 16);
+                        return SizedBox(height: marginTextInput);
                       }),
                       TextInputWidget(
                         placeholder: 'Ім’я',
@@ -96,7 +97,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           return ErrorMessageWidget(
                               errorMessage: state.emailError!);
                         }
-                        return SizedBox(height: 16);
+                        return SizedBox(height: marginTextInput);
                       }),
                       TextInputWidget(
                         placeholder: 'Email',
@@ -111,7 +112,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           return ErrorMessageWidget(
                               errorMessage: state.phoneError!);
                         }
-                        return SizedBox(height: 16);
+                        return const SizedBox(height: marginTextInput);
                       }),
                       TextInputWidget(
                         placeholder: 'Номер телефону',
@@ -126,25 +127,25 @@ class _RegisterPageState extends State<RegisterPage> {
                           return ErrorMessageWidget(
                               errorMessage: state.passwordError!);
                         }
-                        return SizedBox(height: 16);
+                        return SizedBox(height: marginTextInput);
                       }),
                       PasswordInputWidget(
-                        placeholder: 'Пароль',
+                        placeholderText: 'Пароль',
                         controller: _passwordController,
                         onTap: _clearFailMessage,
                       ),
-                      SizedBox(height: 28),
+                      const SizedBox(height: 25),
                       LinkButtonWidget(
                         text: 'Створити',
                         onPressed: _submit,
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       FooterWidget(
                         text: 'Вже маєте акаунт?',
                         linkText: 'Увійти',
                         onTab: () {
-                          _clearFailMessage();
                           AutoRouter.of(context).push(LoginRoute());
+                          _clearFailMessage();
                         },
                       ),
                     ],

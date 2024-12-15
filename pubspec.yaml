@@ -45,6 +45,8 @@ flutter:
     - family: SFProText
       fonts:
         - asset: asset/font/SFProText-Regular.ttf
+          weight: 400
         - asset: asset/font/SFProText-Bold.ttf
+          weight: 700
 flutter_intl:
   enabled: true

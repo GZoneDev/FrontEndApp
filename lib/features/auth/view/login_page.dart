@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
             alignment: Alignment.center,
             child: SizedBox(
               width: 278,
-              height: 448,
+              height: 458,
               child: SingleChildScrollView(
                 child: Column(
                   children: [
@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                         return ErrorMessageWidget(
                             errorMessage: state.emailError!);
                       }
-                      return SizedBox(height: 16);
+                      return SizedBox(height: 13);
                     }),
                     TextInputWidget(
                       controller: _emailController,
@@ -86,15 +86,15 @@ class _LoginPageState extends State<LoginPage> {
                           return ErrorMessageWidget(
                               errorMessage: state.passwordError!);
                         }
-                        return SizedBox(height: 16);
+                        return const SizedBox(height: 10);
                       },
                     ),
                     PasswordInputWidget(
                       controller: _passwordController,
-                      placeholder: 'Пароль',
+                      placeholderText: 'Пароль',
                       onTap: _clearFailMessage,
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 5),
                     Container(
                       margin: const EdgeInsets.only(bottom: 20),
                       alignment: Alignment.centerRight,
@@ -120,8 +120,8 @@ class _LoginPageState extends State<LoginPage> {
                       text: 'Не маєте акаунту?',
                       linkText: 'Створити зараз',
                       onTab: () {
-                        _clearFailMessage();
                         AutoRouter.of(context).push(RegisterRoute());
+                        _clearFailMessage();
                       },
                     ),
                     const SizedBox(height: 40),
