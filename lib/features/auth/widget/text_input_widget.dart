@@ -48,11 +48,12 @@ class TextInputWidget extends StatelessWidget {
             children: [
               Container(
                 margin: marginBackground,
-                width: width,
+                //width: width,
+                //width: null,
                 height: height,
                 decoration: BoxDecoration(
                   color: backgroundColor,
-                  borderRadius: BorderRadius.circular(borderRadius),
+                  borderRadius: BorderRadius.circular(borderRadius!),
                   border: errorMessage != null
                       ? Border.all(color: errorColor, width: borderWidth)
                       : null,

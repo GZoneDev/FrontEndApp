@@ -1,0 +1,37 @@
+<lint-module
+    format="1"
+    dir="C:\Users\vladk\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.15\android"
+    name=":path_provider_android"
+    type="LIBRARY"
+    maven="io.flutter.plugins.pathprovider:path_provider_android:"
+    agpVersion="8.1.0"
+    buildFolder="C:\FlutterProject\FrontEndApp\build\path_provider_android"
+    bootClassPath="C:\Users\vladk\AppData\Local\Android\sdk\platforms\android-34\android.jar;C:\Users\vladk\AppData\Local\Android\sdk\build-tools\33.0.1\core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="AndroidGradlePluginVersion,InvalidPackage,GradleDependency,NewerVersionAvailable"
+      abortOnError="true"
+      absolutePaths="true"
+      checkAllWarnings="true"
+      warningsAsErrors="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="AndroidGradlePluginVersion"
+        severity="IGNORE" />
+      <severity
+        id="GradleDependency"
+        severity="IGNORE" />
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+      <severity
+        id="NewerVersionAvailable"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>

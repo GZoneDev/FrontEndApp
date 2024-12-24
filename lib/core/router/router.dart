@@ -10,6 +10,9 @@ class AppRouter extends RootStackRouter {
         AutoRoute(page: StartRoute.page, path: '/'),
         AutoRoute(page: LoginRoute.page),
         AutoRoute(page: RegisterRoute.page),
+        AutoRoute(page: RestorePasswordRoute.page),
+        AutoRoute(page: RestorePhoneRoute.page),
+        AutoRoute(page: RestoreEmaildRoute.page),
       ];
 
   @override

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "923605008834",
+    "project_id": "receptico-2d43d",
+    "storage_bucket": "receptico-2d43d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923605008834:android:b77fc3b77bc7f7f583165b",
+        "android_client_info": {
+          "package_name": "com.gzone.receptico"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASb-32AkFHErVSy4LvWwzSozzbeOnTrq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923605008834:android:ddff6c732f96d4f883165b",
+        "android_client_info": {
+          "package_name": "receptico.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASb-32AkFHErVSy4LvWwzSozzbeOnTrq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

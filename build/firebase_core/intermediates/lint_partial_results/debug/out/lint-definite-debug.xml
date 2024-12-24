@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="incidents">
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.tools.build:gradle than 8.1.2 is available: 8.7.3. (There is also a newer version of 8.1.𝑥 available, if upgrading to 8.7.3 is difficult: 8.1.4)">
+        <fix-alternatives>
+            <fix-replace
+                description="Change to 8.7.3"
+                family="Update versions"
+                oldString="8.1.2"
+                replacement="8.7.3"/>
+            <fix-replace
+                description="Change to 8.1.4"
+                family="Update versions"
+                robot="true"
+                independent="true"
+                oldString="8.1.2"
+                replacement="8.1.4"/>
+        </fix-alternatives>
+        <location
+            file="${:firebase_core*projectDir}/build.gradle"
+            line="11"
+            column="9"
+            startOffset="172"
+            endLine="11"
+            endColumn="57"
+            endOffset="220"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.annotation:annotation than 1.7.0 is available: 1.9.1">
+        <fix-replace
+            description="Change to 1.9.1"
+            family="Update versions"
+            oldString="1.7.0"
+            replacement="1.9.1"/>
+        <location
+            file="${:firebase_core*projectDir}/build.gradle"
+            line="53"
+            column="24"
+            startOffset="1319"
+            endLine="53"
+            endColumn="62"
+            endOffset="1357"/>
+    </incident>
+
+</incidents>

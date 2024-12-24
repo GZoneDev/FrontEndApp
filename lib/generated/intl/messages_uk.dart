@@ -21,5 +21,29 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'uk';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "accountQuestion":
+            MessageLookupByLibrary.simpleMessage("Вже маєте акаунт?"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Створити зараз"),
+        "emailOrPhonePlaceholder":
+            MessageLookupByLibrary.simpleMessage("Email/Телефон"),
+        "forgottenPassword":
+            MessageLookupByLibrary.simpleMessage("Забули пароль?"),
+        "loginButton": MessageLookupByLibrary.simpleMessage("Увійти"),
+        "loginLink": MessageLookupByLibrary.simpleMessage("Увійти"),
+        "loginSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Увійдіть до облікового запису"),
+        "loginTitle": MessageLookupByLibrary.simpleMessage("Вхід"),
+        "namePlaceholder": MessageLookupByLibrary.simpleMessage("Ім’я"),
+        "noAccountQuestion":
+            MessageLookupByLibrary.simpleMessage("Не маєте акаунту?"),
+        "passwordPlaceholder": MessageLookupByLibrary.simpleMessage("Пароль"),
+        "registerButton": MessageLookupByLibrary.simpleMessage("Створити"),
+        "registerLink": MessageLookupByLibrary.simpleMessage("Зареєструватися"),
+        "registerSubtitle":
+            MessageLookupByLibrary.simpleMessage("Створіть новий акаунт"),
+        "registerTitle": MessageLookupByLibrary.simpleMessage("Реєстрація"),
+        "wantToCookQuestion":
+            MessageLookupByLibrary.simpleMessage("Хочеш Щось Приготувати?")
+      };
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.flutter.plugins.pathprovider.PathProviderPluginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-19T11:40:19" hostname="DESKTOP-LTPS83R" time="0.016">
+  <properties/>
+  <testcase name="testStorageDirectoryTypeTranslation" classname="io.flutter.plugins.pathprovider.PathProviderPluginTest" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

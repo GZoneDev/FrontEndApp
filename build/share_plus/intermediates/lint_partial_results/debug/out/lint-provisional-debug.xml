@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="conditional_incidents">
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:share_plus*debug*sourceProvider*0*javaDir*2}/dev/fluttercommunity/plus/share/Share.kt"
+            line="145"
+            column="55"
+            startOffset="5162"
+            endLine="145"
+            endColumn="76"
+            endOffset="5183"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 22">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:share_plus*debug*sourceProvider*0*javaDir*2}/dev/fluttercommunity/plus/share/SharePlusPendingIntent.kt"
+                startOffset="792"
+                endOffset="838"/>
+        </fix-replace>
+        <location
+            file="${:share_plus*debug*sourceProvider*0*javaDir*2}/dev/fluttercommunity/plus/share/SharePlusPendingIntent.kt"
+            line="25"
+            column="5"
+            startOffset="792"
+            endLine="25"
+            endColumn="51"
+            endOffset="838"/>
+        <map>
+            <condition minGE="ffffffffffe00000"/>
+        </map>
+    </incident>
+
+</incidents>

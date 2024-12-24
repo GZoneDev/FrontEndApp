@@ -1,0 +1,26 @@
+<lint-module
+    format="1"
+    dir="C:\Users\vladk\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.8.1\android"
+    name=":firebase_core"
+    type="LIBRARY"
+    maven="io.flutter.plugins.firebase.core:firebase_core:"
+    agpVersion="8.1.0"
+    buildFolder="C:\FlutterProject\FrontEndApp\build\firebase_core"
+    bootClassPath="C:\Users\vladk\AppData\Local\Android\sdk\platforms\android-34\android.jar;C:\Users\vladk\AppData\Local\Android\sdk\build-tools\33.0.1\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="InvalidPackage"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>

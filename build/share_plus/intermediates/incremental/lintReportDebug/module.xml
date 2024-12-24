@@ -1,0 +1,26 @@
+<lint-module
+    format="1"
+    dir="C:\Users\vladk\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-10.1.3\android"
+    name=":share_plus"
+    type="LIBRARY"
+    maven="dev.fluttercommunity.plus.share:share_plus:"
+    agpVersion="8.1.0"
+    buildFolder="C:\FlutterProject\FrontEndApp\build\share_plus"
+    bootClassPath="C:\Users\vladk\AppData\Local\Android\sdk\platforms\android-34\android.jar;C:\Users\vladk\AppData\Local\Android\sdk\build-tools\33.0.1\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="InvalidPackage"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>

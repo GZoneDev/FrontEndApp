@@ -1,0 +1,23 @@
+C:\Users\vladk\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.8.1\android\build.gradle:11: Warning: A newer version of com.android.tools.build:gradle than 8.1.2 is available: 8.7.3. (There is also a newer version of 8.1.𝑥 available, if upgrading to 8.7.3 is difficult: 8.1.4) [AndroidGradlePluginVersion]
+        classpath 'com.android.tools.build:gradle:8.1.2'
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+C:\Users\vladk\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.8.1\android\build.gradle:53: Warning: A newer version of androidx.annotation:annotation than 1.7.0 is available: 1.9.1 [GradleDependency]
+        implementation 'androidx.annotation:annotation:1.7.0'
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+0 errors, 2 warnings

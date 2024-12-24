@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "io.flutter.plugins.firebase.core.firebase_core-mergeProfileResources-1:/values-zu/values-zu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vladk\\.gradle\\caches\\transforms-3\\dbb2fa6ccbc4f6e9257cab3e08755074\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-zu\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "785",
+                        "endColumns": "131",
+                        "endOffsets": "912"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\vladk\\.gradle\\caches\\transforms-3\\5008fb5c154386e5f1e83ef807655b52\\transformed\\core-1.13.1\\res\\values-zu\\values-zu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,257,356,459,565,672,785",
+                        "endColumns": "97,103,98,102,105,106,112,100",
+                        "endOffsets": "148,252,351,454,560,667,780,881"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,257,356,459,565,672,917",
+                        "endColumns": "97,103,98,102,105,106,112,100",
+                        "endOffsets": "148,252,351,454,560,667,780,1013"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "io.flutter.plugins.firebase.core.firebase_core-merged_res-3:/values-zu/values-zu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vladk\\.gradle\\caches\\transforms-3\\dbb2fa6ccbc4f6e9257cab3e08755074\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-zu\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "785",
+                        "endColumns": "131",
+                        "endOffsets": "912"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\vladk\\.gradle\\caches\\transforms-3\\5008fb5c154386e5f1e83ef807655b52\\transformed\\core-1.13.1\\res\\values-zu\\values-zu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,257,356,459,565,672,785",
+                        "endColumns": "97,103,98,102,105,106,112,100",
+                        "endOffsets": "148,252,351,454,560,667,780,881"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,257,356,459,565,672,917",
+                        "endColumns": "97,103,98,102,105,106,112,100",
+                        "endOffsets": "148,252,351,454,560,667,780,1013"
+                    }
+                }
+            ]
+        }
+    ]
+}
